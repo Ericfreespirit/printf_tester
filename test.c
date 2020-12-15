@@ -22,7 +22,8 @@ int main()
 
 	ft_printf("hello\n");
 	ft_printf("%chello\n");
-	ft_printf("%c%s%d%i%u%p%x%Xhello\n");
+	ft_printf("%10c%s%d%i%u%p%x%Xhello\n");
+	ft_printf("%10c%s%-01m0.d%i%u%p%x%Xhello\n");
 	ft_printf("%mhello\n");
 	ft_printf("1%");
 
