@@ -1,6 +1,5 @@
 NAME	= libft.a
-HEAD := -I../printf\
-	-I../printf/*
+HEAD := -I../printf/include
 CFLAGS = -Wall -Wextra -Werror
 SRC := ../printf/*.c\
 	../printf/*/*.c
