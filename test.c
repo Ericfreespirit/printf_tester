@@ -1,103 +1,32 @@
- #include <stdio.h>
-#include <stdlib.h>
+#include "../printf/include/printf.h"
 
 int	ft_printf(const char *s, ...);
 int	is_valid(char c);
+t_param param_default(void);
+void print_struct(t_param);
+int	check_reverse(t_param *param, char const *str,int pos);
+
+
 int	n = 42;
 char c = 'A';
-char str[5] = "eric";
+char str[100] = "eric";
 unsigned int u_n = -1;
-//list all output for parsing
-void	parsing_flag()
-{
-	printf("==== width ====\n");
-	printf("%5d\n",n);
-	printf("%5i\n",n);
-	printf("%5c\n",c);
-	printf("%5s\n",str);
-	printf("%5p\n",str);
-	printf("%5u\n",u_n);
-	printf("%5x\n",n);
-	printf("%5X\n",n);
 
-	printf("==== width | '0' ====\n");
-	printf("%05d\n",n);
-	printf("%05i\n",n);
-	printf("%05c\n",c);
-	printf("%05s\n",str);
-	printf("%05p\n",str);
-	printf("%05u\n",u_n);
-	printf("%05x\n",n);
-	printf("%05X\n",n);
-
-	printf("==== width | '-' ====\n");
-	printf("%-5d\n",n);
-	printf("%-5i\n",n);
-	printf("%-5c\n",c);
-	printf("%-5s\n",str);
-	printf("%-5p\n",str);
-	printf("%-5u\n",u_n);
-	printf("%-5x\n",n);
-	printf("%-5X\n",n);
-	
-	printf("==== width | '0' ====\n");
-	printf("%05d\n",n);
-	printf("%05i\n",n);
-	printf("%05c\n",c);
-	printf("%05s\n",str);
-	printf("%05p\n",str);
-	printf("%05u\n",u_n);
-	printf("%05x\n",n);
-	printf("%05X\n",n);
-
-	printf("==== width | '-' | '0' ====\n");
-	printf("%-05d\n",n);
-	printf("%-05i\n",n);
-	printf("%-05c\n",c);
-	printf("%-05s\n",str);
-	printf("%-05p\n",str);
-	printf("%-05u\n",u_n);
-	printf("%-05x\n",n);
-	printf("%-05X\n",n);
-}
-
-void	parsing_precision()
-{
-	printf("==== width | '.'  ====\n");
-	printf("%05.d\n",n);
-	printf("%05.i\n",n);
-	printf("%05.c\n",c);
-	printf("%05.s\n",str);
-	printf("%05.p\n",str);
-	printf("%05.u\n",u_n);
-	printf("%05.x\n",n);
-	printf("%05.X\n",n);
-	
-	printf("==== width | '*'  ====\n");
-	printf("%05*d\n",12,n);
-	printf("%05*i\n",12,n);
-	printf("%05*c\n",12,c);
-	printf("%05*s\n",12,str);
-	printf("%05*p\n",12,str);
-	printf("%05*u\n",12,u_n);
-	printf("%05*x\n",12,n);
-	printf("%05*X\n",12,n);
-	
-	printf("==== width | '.' |'*'  ====\n");
-	printf("%05.*d\n",12,n);
-	printf("%05.*i\n",12,n);
-	printf("%05.*c\n",12,c);
-	printf("%05.*s\n",12,str);
-	printf("%05.*p\n",12,str);
-	printf("%05.*u\n",12,u_n);
-	printf("%05.*x\n",12,n);
-	printf("%05.*X\n",12,n);
-}
 
 int main()
 {	
-	parsing_flag();
-	printf("/////////////////////////////////////\n");
-	parsing_precision();
-		return (0);
+int	i;
+const char s[100] = "%----1-0000-";
+t_param param;
+
+i = 0;
+
+param = param_default();
+//printf("%d\n",check_reverse(&param, s, i));
+printf("%-0-0-d",42);
+/*
+ 
+
+*/
+	return (0);
 }
