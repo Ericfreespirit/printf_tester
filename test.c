@@ -21,12 +21,6 @@ t_param param;
 
 i = 0;
 
-param = param_default();
-//printf("%d\n",check_reverse(&param, s, i));
-printf("%-0-0-d",42);
-/*
- 
-
-*/
+ft_printf("%--deric",n);
 	return (0);
 }
