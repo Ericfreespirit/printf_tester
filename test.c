@@ -5,6 +5,8 @@ int	is_valid(char c);
 t_param param_default(void);
 void print_struct(t_param);
 void ft_putnbr(int nb);
+int	clean_int(int nb);
+
 
 
 
@@ -39,9 +41,11 @@ int main()
 	//printf("%-4.3d",1);
 	//printf("%4.3d",1);
 
+	//== PROBLEM: ˆ@ at at the end of %d 
 	//ft_printf("%03d",42);
 	//ft_printf("%-3d",42);
-	ft_putnbr(42);
+
+	printf("%d\n", clean_int(42));
 
 
 
