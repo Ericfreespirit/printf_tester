@@ -4,6 +4,7 @@ int	ft_printf(const char *s, ...);
 int	is_valid(char c);
 t_param param_default(void);
 void print_struct(t_param);
+void ft_putnbr(int nb);
 
 
 
@@ -29,7 +30,20 @@ int main()
 	//printf("%011.10d",123456789);
 	//printf("%011.d",123456789);
 
-	printf("%.2d\n",42);
+	// == TEST: if precision is neg or only '.' ==
+	//printf("%-10.3d\n",42);
+
+	// == TEST: if precision with '0' is ignored
+
+	// == TEST: if precision with '-'
+	//printf("%-4.3d",1);
+	//printf("%4.3d",1);
+
+	//ft_printf("%03d",42);
+	//ft_printf("%-3d",42);
+	ft_putnbr(42);
+
+
 
 	return (0);
 }
