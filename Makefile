@@ -14,6 +14,9 @@ $(NAME) :
 			@rm libft.a
 			@mv a.out result
 			@echo "\033[0;32mCompiled\033[0m"
+			@echo "\n"
+			@echo "== RESULT =="
+			@./result | cat -e
 clean :
 			@rm -f *.o
 

@@ -45,9 +45,7 @@ int main()
 	//ft_printf("%03d",42);
 	//ft_printf("%-3d",42);
 
-	printf("%d\n", clean_int(42));
-
-
+	ft_printf("%-5d",1234);
 
 	return (0);
 }
