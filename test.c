@@ -29,7 +29,7 @@ int main()
 	//√ printf("%.5d\n",1234);
 	//printf("%1.5d\n",1234);
 
-	ft_printf("%-6.10d\n",1234);
+	ft_printf("%d\n",4);
 	
 	//printf("%6.5d\n",1234);
 	//printf("%-6.5d\n",1234);
