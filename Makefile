@@ -1,21 +1,19 @@
 NAME	= libft.a
-HEAD := -I../printf/include
+HEAD := -I../ft_printf/include
 CFLAGS = -Wall -Wextra -Werror
-SRC := ../printf/*.c\
-	../printf/*/*.c
+SRC := ../ft_printf/*.c\
+	../ft_printf/*/*.c
 all :	$(NAME)
 
 $(NAME) :
 			@gcc -c ${CFLAGS} ${HEAD} ${SRC}
 			@ar rc $(NAME) *.o
 			@ranlib $(NAME)
-			@gcc libft.a test.c
+			@gcc libft.a main.c
 			@rm -f *.o
 			@rm libft.a
 			@mv a.out result
 			@echo "\033[0;32mCompiled\033[0m"
-			@echo "\n"
-			@echo "== RESULT =="
 			@./result | cat -e
 clean :
 			@rm -f *.o
