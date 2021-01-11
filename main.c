@@ -4,11 +4,6 @@ int	ft_printf(const char *s, ...);
 int	is_valid(char c);
 t_param param_default(void);
 void print_struct(t_param);
-void ft_putnbr(int nb);
-int	clean_int(int nb);
-
-
-
 
 	int		a = -4;
 	int		b = 0;
@@ -35,8 +30,9 @@ int	clean_int(int nb);
 
 int main()
 {	
-	//ft_printf(" --- Return : %d\n", ft_printf("%0i, %0d, %0d, %0d, %0d, %0d, %0d, %0d", i, j, k, l, m, c, e, d)); //T3
-	//printf("\nRESULTAT = %d\n",printf("%10.*s",2,"eric"));
-	ft_print("%d",1234);
+	//ft_printf(" --- Return : %d\n", ft_printf("%0.i, %0.d, %0.d, %0.d, %0.d, %0.d, %0.d, %0.d", i, j, k, l, m, c, e, d)); //T12
+	
+	// if precision + va_arg int == 0;
+	ft_printf("%.2d",42);
 	return (0);
 }
