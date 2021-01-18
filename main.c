@@ -36,15 +36,18 @@ int main()
   a = -1;
         while (a < 5) //T214-256
         {
-  
-				//ft_printf(" --- Return : %d\n", ft_printf("%*u, %*u",a,i,a,j));
+
+				
 				ft_printf(" --- Return : %d\n", ft_printf("%*u, %*x, %*X, %*u, %*x, %*X, %*u, %*x, %*X, %*u, %*x, %*X, %*u, %*x, %*X, %*u, %*x, %*X, %*u, %*x, %*X, %*u, %*x, %*X"
-				, a, i, a, i, a, i, a, j, a, j, a, j, a, k, a, k, a, k, a, l, a, l, a, l, a, m, a, m, a, m, a, c, a, c, a, c, a, d, a, d, a, d, a, e, a, e, a, e));
-					//ft_printf(" --- Return : %d\n", ft_printf("%0*u, %0*x, %0*X, %0*u, %0*x, %0*X, %0*u, %0*x, %0*X, %0*u, %0*x, %0*X, %0*u, %0*x, %0*X, %0*u, %0*x, %0*X, %0*u, %0*x, %0*X, %0*u, %0*x, %0*X", a, i, a, i, a, i, a, j, a, j, a, j, a, k, a, k, a, k, a, l, a, l, a, l, a, m, a, m, a, m, a, c, a, c, a, c, a, d, a, d, a, d, a, e, a, e, a, e));
-          //ft_printf(" --- Return : %d\n", ft_printf("%-*u, %-*x, %-*X, %-*u, %-*x, %-*X, %-*u, %-*x, %-*X, %-*u, %-*x, %-*X, %-*u, %-*x, %-*X, %-*u, %-*x, %-*X, %-*u, %-*x, %-*X, %-*u, %-*x, %-*X", a, i, a, i, a, i, a, j, a, j, a, j, a, k, a, k, a, k, a, l, a, l, a, l, a, m, a, m, a, m, a, c, a, c, a, c, a, d, a, d, a, d, a, e, a, e, a, e));
-          //ft_printf(" --- Return : %d\n", ft_printf("%.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X, %.*u, %.*x, %.*X", a, i, a, i, a, i, a, j, a, j, a, j, a, k, a, k, a, k, a, l, a, l, a, l, a, m, a, m, a, m, a, c, a, c, a, c, a, d, a, d, a, d, a, e, a, e, a, e));
+				, 																				 a,i, a,i, a,i, a,j, a,j, a,j, a,k, a,k, a,k, a,l, a,l, a,l, a,m, a,m, a,m, a,c, a,c, a,c, a,d, a,d, a,d, a,e, a,e, a,e));
+				/*ft_printf("%*X,%*X,%*X,%*X,%*X,%*X,%*X,%*X\n",a,i,a,j,a,k,a,l,a,m,a,c,a,d,a,e);
+				ft_printf("----------\n");
+				ft_printf("%*x,%*x,%*x,%*x,%*x,%*x,%*x,%*x\n",a,i,a,j,a,k,a,l,a,m,a,c,a,d,a,e);
+				ft_printf("----------\n");
+				ft_printf("%*u,%*u,%*u,%*u,%*u,%*u,%*u,%*u\n",a,i,a,j,a,k,a,l,a,m,a,c,a,d,a,e);
+				*/
           a++;
         }
 				
-					return (0);
+	return (0);
 }
